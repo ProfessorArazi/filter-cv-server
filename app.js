@@ -1,6 +1,7 @@
 const express = require("express");
 const multer = require("multer");
 const cors = require("cors");
+require("dotenv").config({ path: __dirname + "/.env" });
 const validator = require("validator");
 const pdfRead = require("./read/pdfRead");
 const docxRead = require("./read/docxRead");
